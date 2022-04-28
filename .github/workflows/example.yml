@@ -15,6 +15,9 @@ permissions:
 
 jobs:
   terraform:
+    name: Load a private module from the Modulemancer registry
+    runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
     - uses: hashicorp/setup-terraform@v1
