@@ -1,0 +1,19 @@
+permissions:
+  id-token: write
+
+jobs:
+  terraform:
+    steps:
+    - uses: actions/checkout@v2
+    - uses: hashicorp/setup-terraform@v1
+      with:
+        terraform_version: 1.1.9
+
+    # use the github action before terraform init: https://github.com/Modulemancer/github-action
+    - uses: modulemancer/github-action@v1
+
+    - name: Terraform Init
+      run: terraform init -reconfigure
+
+    - name: Terraform Plan
+      run: terraform plan
