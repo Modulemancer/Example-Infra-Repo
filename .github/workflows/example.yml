@@ -25,7 +25,7 @@ jobs:
         terraform_version: 1.1.9
 
     # use the github action before terraform init: https://github.com/Modulemancer/github-action
-    - uses: modulemancer/github-action
+    - uses: modulemancer/github-action@v1
 
     - name: Terraform Init
       run: terraform init -reconfigure
