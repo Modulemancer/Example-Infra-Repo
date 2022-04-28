@@ -1,5 +1,5 @@
 ## Modulemancer Example
-This is a [Modulemancer](https://modulemancer.com) that will use a private module saved in the specified registry and pull it in.
+This is a [Modulemancer](https://modulemancer.com) Terraform exampl that will use a private module saved in the specified registry and pull it in.
 
 ## The setup
 The configuration for this repo is:
